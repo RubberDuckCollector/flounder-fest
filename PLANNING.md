@@ -1,13 +1,17 @@
 # Overview 
 
-- make a proram that allows the user to enter in data to track all flounderfest episodes and their point totals/how points change over time
-    - track placements
-    - track wins
-    - every time a win is counted, it increments a total_wins variable
-    - plot graphs of points per episode
-    - track point differential
-    - pandas, matplotlib.pyplot, numpy, readline
-    - make an analyser that looks at the item pulls within an episode/season range and says if that player tended to be at the front, middle, or back
+- make a proram that allows the user to enter in data to track flounderfest episodes and:
+    - their point totals/how points change over time
+    - items
+    - item usage
+    - "stage" hazards
+        - track placements
+        - track wins
+        - every time a win is counted, it increments a total_wins variable
+        - plot graphs of points per episode
+        - track point differential
+        - pandas, matplotlib.pyplot, numpy, readline
+        - make an analyser that looks at the item pulls within an episode/season range and says if that player tended to be at the front, middle, or back
 
 # Programming
 
