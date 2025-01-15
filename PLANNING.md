@@ -17,7 +17,7 @@
 
 # TODO
 
-- [ ] write a procedure for tracks_played that asks the user:
+- [x] write a procedure for tracks_played that asks the user:
     - start id?
     - season?
     - episode?
@@ -26,14 +26,13 @@
     - is tiebreak episode?
     - twd98 video title?
     - twd98 video link?
-    - nmeade video title?
-    - nmeade video link?
-    - how many races?
     - *for as many races as there are, enter the track names on each race*
     - **the program automatically generates SQL statements for all of these operations and executes them**
     - **the first statement uses the start id, and after that increments the id on every new statement**
     - **the track counter starts at 1 and increments for each new race**
-- [ ] make a 
+        - **the code asks for tracks until "-1" is entered. then it stops and counts the tracks**
+        - **the statements are made and executed on the database**
+- [x] make the program surround your input with '' single quotes for you (***URGENT***)
 
 
 
