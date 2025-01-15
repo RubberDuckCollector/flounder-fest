@@ -7,8 +7,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         nmeade_win BOOLEAN,
         twd98_win BOOLEAN
     );
@@ -21,8 +19,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         nmeade_points INTEGER,
         nmeade_track_win BOOLEAN,
@@ -38,8 +34,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         nmeade_placement INTEGER,
         twd98_placement INTEGER
@@ -53,8 +47,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         nmeade_bananas INTEGER,
         nmeade_bloopers INTEGER,
@@ -102,8 +94,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         nmeade_bananas INTEGER,
         nmeade_bloopers INTEGER,
@@ -181,8 +171,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         nmeade_fallen_off_track INTEGER,
         nmeade_fallen_into_lava INTEGER,
@@ -213,8 +201,6 @@ init_table_statements: dict = {"create_episode_wins_table": """
         is_tiebreak_episode BOOLEAN,
         twd98_video_title TEXT,
         twd98_video_link TEXT,
-        nmeade_video_title TEXT,
-        nmeade_video_link TEXT,
         race INTEGER,
         track TEXT
     );

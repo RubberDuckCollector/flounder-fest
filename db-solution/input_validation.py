@@ -4,30 +4,40 @@ from datetime import datetime
 
 """
 variables starting with `p_` denote a parameter.
+the error cases are nearly always checked first, making the code quick to read.
 """
 
 def validate_start_id(p_start_id: int):
-    if p_start_id > 0:
-        pass
-    else:
-        print("Please enter a positive integer.")
+    if not isinstance(p_start_id, int):
+        print("Please enter an integer.")
         sys.exit(0)
+    elif p_start_id < 0:
+        print("Please enter an integer of 0 or more.")
+        sys.exit(0)
+    else:
+        pass
 
 
 def validate_season(p_season: int):
-    if p_season > 0:
-        pass
-    else:
-        print("Please enter a positive integer.")
+    if not isinstance(p_season, int):
+        print("Please enter an integer.")
         sys.exit(0)
+    elif p_season < 0:
+        print("Please enter an integer of 0 or more.")
+        sys.exit(0)
+    else:
+        pass
 
 
 def validate_episode(p_episode: int):
-    if p_episode > 0:
-        pass
-    else:
-        print("Please enter a positive integer.")
+    if not isinstance(p_episode, int):
+        print("Please enter an integer.")
         sys.exit(0)
+    elif p_episode < 0:
+        print("Please enter an integer of 0 or more.")
+        sys.exit(0)
+    else:
+        pass
 
 
 def validate_final_episode_of_season(p_is_final_episode_of_season: int):
@@ -46,7 +56,7 @@ def validate_date(p_date: str):
     if re.match(date_regex, p_date):
         pass
     else:
-        print("Please enter the date in the format YYYY-MM-DD.")
+        print("Please enter a date in the format YYYY-MM-DD.")
         sys.exit(0)
     try:
         # test that `date` is a valid date
@@ -69,23 +79,23 @@ def validate_tiebreak_episode(p_is_tiebreak_episode: int):
 
 def validate_youtube_link(p_link: str):
     link_pattern = r"^(https?://)?(www\.)?(youtube\.com|youtu\.be)/(watch\?v=|playlist\?list=|channel/|c/)?[a-zA-Z0-9_-]+(&[a-zA-Z0-9_=-]*)*$"
-    if re.match(link_pattern, p_link):
-        pass
-    else:
+    if not re.match(link_pattern, p_link):
         print("Please enter a valid youtube link.")
         sys.exit(0)
+    else:
+        pass
 
 
 def validate_num_races(p_num_races: int):
-    if p_num_races > 0:
-        pass
-    else:
-        print("Please enter an integer more than 0.")
+    if p_num_races < 0:
+        print("Please enter an integer of 0 or more.")
         sys.exit(0)
+    else:
+        pass
 
 
 def validate_num_item_or_dodge(p_num_item_or_dodge: int):
-    if p_num_item_or_dodge > 0:
-        pass
-    else:
+    if p_num_item_or_dodge < 0:
         print("Please enter an integer of 0 or more.")
+    else:
+        pass
