@@ -26,6 +26,7 @@
     - is tiebreak episode?
     - twd98 video title?
     - twd98 video link?
+    - nmeade video title?
     - nmeade video link?
     - how many races?
     - *for as many races as there are, enter the track names on each race*
