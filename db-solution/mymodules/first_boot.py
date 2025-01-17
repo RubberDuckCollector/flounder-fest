@@ -18,7 +18,7 @@ def first_boot(database: str):  # msg is an optional but recommended argument
 
     try:
         with sqlite3.connect(database) as conn:
-            print(f"Opened SQLite database with version {sqlite3.sqlite_version} successfully.")
+            print(f"Opened SQLite database with version {sqlite3.sqlite_version} successfully. Called from file: {caller_file}")
 
             cursor = conn.cursor()  # this is like saying `f = open(filename, "r")`, cursor is like f
             try:
@@ -27,7 +27,8 @@ def first_boot(database: str):  # msg is an optional but recommended argument
                     conn.commit()
             except sqlite3.OperationalError as e:
                 print("Failed to create tables:", e)
-            print(f"Successfully created tables (if they didn't exist already). This procedure was called from file: {caller_file}")
+            print(f"Successfully created tables (if they didn't exist already).")
+            # print(f"Successfully created tables (if they didn't exist already). This procedure was called from file: {caller_file}")
 
     except sqlite3.OperationalError as e:
         print("Failed to open database:", e)

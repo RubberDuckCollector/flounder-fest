@@ -2,6 +2,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS episode_wins (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,
@@ -14,6 +15,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS points_per_race (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,
@@ -29,6 +31,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS placements (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,
@@ -42,6 +45,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS items_pulled (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,
@@ -89,6 +93,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS itemplay (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,
@@ -166,6 +171,7 @@ init_table_statements: dict = {"create_episode_wins_table": """
     CREATE TABLE IF NOT EXISTS stage_hazards (
         id INTEGER PRIMARY KEY,
         season INTEGER,
+        episode INTEGER,
         is_final_episode_of_season BOOLEAN,
         is_tiebreak_episode BOOLEAN,
         date DATE,

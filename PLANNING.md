@@ -32,7 +32,8 @@
     - **the track counter starts at 1 and increments for each new race**
         - **the code asks for tracks until "-1" is entered. then it stops and counts the tracks**
         - **the statements are made and executed on the database**
-- [x] make the program surround your input with '' single quotes for you (***URGENT***)
+    - [x] make the program surround your input with '' single quotes for you (***URGENT***)
+- [ ] automated data entry for episode_wins
 
 
 

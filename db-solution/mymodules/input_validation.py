@@ -118,3 +118,16 @@ def validate_num_item_or_dodge(p_num_item_or_dodge: int):
         print("Please enter an integer of 0 or more.")
     else:
         pass
+
+
+def validate_nmeade_win(p_nmeade_win: int) -> bool:
+    match p_nmeade_win:
+        case 1:
+            p_nmeade_win = True
+        case 2:
+            p_nmeade_win = False
+        case _:
+            print("Enter a valid number (1 or 2).")
+            sys.exit(0)
+
+    return p_nmeade_win
